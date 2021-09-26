@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int number,exponentiated,total=1;
+        System.out.print("Üssü alınacak sayıyı giriniz\t: ");
+        number=scanner.nextInt();
+        System.out.print("Üssü giriniz\t: ");
+        exponentiated=scanner.nextInt();
+        for (int i=1;i<=exponentiated;i++){
+            total=total*number;
+        }
+        System.out.println("Üssü hesaplama sonucu\t: "+total);
+    }
+}
